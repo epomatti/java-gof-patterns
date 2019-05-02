@@ -5,27 +5,27 @@ import lombok.Setter;
 
 public @Getter @Setter class MessageMediator implements Mediator {	
 	
-	private Consumidor consumidor;
-	private Produtor produtor;
+	private Consumer consumer;
+	private Producer producer;
 
 	@Override
-	public void registrarConsumidor(Consumidor consumidor) {
-		this.consumidor = consumidor;		
+	public void registerConsumer(Consumer consumer) {
+		this.consumer = consumer;		
 	}
 
 	@Override
-	public void registrarProdutor(Produtor produtor) {
-		this.produtor = produtor;
+	public void registerProducer(Producer producer) {
+		this.producer = producer;
 	}
 
 	@Override
 	public void send(Message message) {		
-		consumidor.onMessage(message);		
+		consumer.onMessage(message);		
 	}
 
 	@Override
 	public void acknowledge(Boolean ack) {
-		produtor.acknowledge(ack);
+		producer.acknowledge(ack);
 	}
 
 }

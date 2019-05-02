@@ -7,7 +7,7 @@ public class OnButtonState implements ButtonState{
 	@Override
 	public String push(Button button) {
 		button.setState(OffButtonState.instance());
-		return "Desligado";
+		return "Off";
 	}
 
 	public static ButtonState instance() {

@@ -5,7 +5,7 @@ import lombok.Data;
 public @Data class Car implements Cloneable{
 	
 	private String name;
-	private String cor;
+	private String color;
 	
 	@Override	
 	public Object clone() throws CloneNotSupportedException {

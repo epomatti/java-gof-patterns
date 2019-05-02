@@ -13,9 +13,9 @@ public class TransactionalCommand implements InvocationHandler{
 
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-		System.out.println("Conexão aberta.");		
+		System.out.println("Opened connection.");		
 		Object result = method.invoke(command, args);		
-		System.out.println("Commitado!!!");
+		System.out.println("Committed!!!");
 		return result;
 	}
 

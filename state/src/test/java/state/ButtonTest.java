@@ -10,12 +10,12 @@ public class ButtonTest {
 	@Test
 	public void testPush() {
 
-		String ligado = "Ligado";
-		String desligado = "Desligado";
+		String on = "On";
+		String off = "Off";
 		
 		Button button = new Button();
-		Assert.assertEquals(ligado, button.push());
-		Assert.assertEquals(desligado, button.push());
+		Assert.assertEquals(on, button.push());
+		Assert.assertEquals(off, button.push());
 		
 	}
 

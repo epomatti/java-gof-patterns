@@ -6,11 +6,11 @@ public class CarClone {
 		
 		Car car = new Car();
 		car.setName("Volvo");
-		car.setCor("Vermelho");
+		car.setColor("Red");
 		
 		Car carClone = (Car) car.clone();
 		System.out.println(carClone.getName());
-		System.out.println(carClone.getCor());
+		System.out.println(carClone.getColor());
 		
 	}
 

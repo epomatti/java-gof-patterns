@@ -4,11 +4,11 @@ package strategy;
 import org.junit.Assert;
 import org.junit.Test;
 
-import strategy.Contexto;
-import strategy.Dividir;
-import strategy.Multiplicar;
-import strategy.Somar;
-import strategy.Subtrair;
+import strategy.StrategyContext;
+import strategy.Divide;
+import strategy.Multiply;
+import strategy.Add;
+import strategy.Subtract;
 
 public class StrategyTest {
 
@@ -20,22 +20,22 @@ public class StrategyTest {
 		int b = 10;
 
 		// Resultados esperados
-		int resultadoSoma = 110;
-		int resultadoSubtracao = 90;
-		int resultadoMultiplicacao = 1000;
-		int resultadoDivisao = 10;
+		int addResult = 110;
+		int subResult = 90;
+		int multResult = 1000;
+		int divResult = 10;
 		
-		Contexto contexto = new Contexto(new Somar());
-		Assert.assertEquals(resultadoSoma, contexto.executeStrategy(a, b));
+		StrategyContext context = new StrategyContext(new Add());
+		Assert.assertEquals(addResult, context.executeStrategy(a, b));
 		
-		contexto = new Contexto(new Subtrair());
-		Assert.assertEquals(resultadoSubtracao, contexto.executeStrategy(a, b));
+		context = new StrategyContext(new Subtract());
+		Assert.assertEquals(subResult, context.executeStrategy(a, b));
 		
-		contexto = new Contexto(new Multiplicar());
-		Assert.assertEquals(resultadoMultiplicacao, contexto.executeStrategy(a, b));
+		context = new StrategyContext(new Multiply());
+		Assert.assertEquals(multResult, context.executeStrategy(a, b));
 		
-		contexto = new Contexto(new Dividir());
-		Assert.assertEquals(resultadoDivisao, contexto.executeStrategy(a, b));
+		context = new StrategyContext(new Divide());
+		Assert.assertEquals(divResult, context.executeStrategy(a, b));
 	}
 
 }

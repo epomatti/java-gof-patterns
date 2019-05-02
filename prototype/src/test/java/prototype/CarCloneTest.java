@@ -13,11 +13,11 @@ public class CarCloneTest {
 		
 		Car car = new Car();
 		car.setName("Volvo");
-		car.setCor("Vermelho");
+		car.setColor("Red");
 		
 		Car carClone = (Car) car.clone();
 		Assert.assertEquals(car.getName(), carClone.getName());
-		Assert.assertEquals(car.getCor(), carClone.getCor());
+		Assert.assertEquals(car.getColor(), carClone.getColor());
 	}
 
 }

@@ -4,9 +4,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Sorvete sorvete = new CoberturaDecorator(new SorveteSimples());
+		IceCream iceCream = new ToppingDecorator(new SimpleIceCream());
 		
-		System.out.println(sorvete.montarSorvete());
+		System.out.println(iceCream.buildIceCream());
 		
 	}
 	

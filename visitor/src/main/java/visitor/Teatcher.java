@@ -1,10 +1,10 @@
 package visitor;
 
-public class Aluno implements Element{
+public class Teatcher implements Element{
 
 	@Override
 	public void accept(Visitor visitor) {
-
+		
 		visitor.visit(this);
 		
 	}

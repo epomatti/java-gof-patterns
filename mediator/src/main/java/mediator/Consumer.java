@@ -1,15 +1,15 @@
 package mediator;
 
-public class Consumidor {
+public class Consumer {
 	
 	private Mediator mediator;
 	
-	public Consumidor(Mediator mediator) {
+	public Consumer(Mediator mediator) {
 		this.mediator = mediator;
 	}
 	
 	public void onMessage(Message message) {
-		System.out.println("Mensagem recebida: " + message.getMessage());
+		System.out.println("Message received: " + message.getMessage());
 		mediator.acknowledge(true);
 	}
 

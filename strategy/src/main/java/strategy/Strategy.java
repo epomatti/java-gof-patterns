@@ -2,6 +2,6 @@ package strategy;
 
 public interface Strategy {
 	
-	public int executar(int a, int b);
+	public int execute(int a, int b);
 
 }

@@ -1,16 +1,16 @@
 package strategy;
 
-public class Contexto {
+public class StrategyContext {
 
 	private Strategy strategy;
 
-	public Contexto(Strategy strategy) {
+	public StrategyContext(Strategy strategy) {
 		super();
 		this.strategy = strategy;
 	}
 
 	public int executeStrategy(int a, int b) {
-		return strategy.executar(a, b);
+		return strategy.execute(a, b);
 	}
 
 }

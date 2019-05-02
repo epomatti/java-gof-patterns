@@ -2,6 +2,6 @@ package composite;
 
 public interface Item {
 	
-	public String nome();
+	public String name();
 
 }

@@ -4,8 +4,8 @@ public class Main {
 	
 	public static void main(String[] args) {
 
-		AdaptadorPS2 ps2 = new AdaptadorPS2(new MouseUSB());
-		ps2.comando("moveu");
+		PS2Adapter ps2 = new PS2Adapter(new USBMouse());
+		ps2.command("moved");
 		
 	}
 

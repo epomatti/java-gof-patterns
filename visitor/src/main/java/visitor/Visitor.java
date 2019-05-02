@@ -2,7 +2,7 @@ package visitor;
 
 public interface Visitor {
 
-	public void visit(Aluno aluno);
-	public void visit(Professor professor);
+	public void visit(Student student);
+	public void visit(Teatcher teatcher);
 	
 }

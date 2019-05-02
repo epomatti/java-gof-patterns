@@ -5,13 +5,13 @@ public class Client {
 	public static void main(String[] args) {
 		
 		Mediator mediator = new MessageMediator();
-		Produtor produtor = new Produtor(mediator);
-		Consumidor consumidor = new Consumidor(mediator);
+		Producer producer = new Producer(mediator);
+		Consumer consumer = new Consumer(mediator);
 		
-		mediator.registrarConsumidor(consumidor);
-		mediator.registrarProdutor(produtor);
+		mediator.registerConsumer(consumer);
+		mediator.registerProducer(producer);
 		
-		produtor.enviarMensagemTexto("TESTE!");		
+		producer.sendTextMessage("TEST!");		
 		
 	}
 
