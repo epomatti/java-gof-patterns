@@ -7,5 +7,5 @@
 		<artifactId>java-gof-patterns</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>chain-of-responsability</artifactId>
+	<artifactId>chain-of-responsibility</artifactId>
 </project>

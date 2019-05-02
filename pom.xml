@@ -46,7 +46,7 @@
 		<module>abstract-factory</module>
 		<module>adapter</module>
 		<module>builder</module>
-		<module>chain-of-responsability</module>
+		<module>chain-of-responsibility</module>
 		<module>composite</module>
 		<module>decorator</module>
 		<module>facade</module>

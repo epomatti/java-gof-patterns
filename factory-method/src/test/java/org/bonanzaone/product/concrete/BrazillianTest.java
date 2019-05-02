@@ -3,6 +3,8 @@ package org.bonanzaone.product.concrete;
 import org.junit.Assert;
 import org.junit.Test;
 
+import product.concrete.Brazillian;
+
 public class BrazillianTest {
 
 	@Test
