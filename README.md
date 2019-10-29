@@ -5,8 +5,9 @@ Classic design patterns implemented in Java that I used to prepare for my OCMJEA
 To run this code simply:
 
 1. Clone the repo
-2. Import as composed Maven project into your favorite IDE (with [Lombok plugin](https://projectlombok.org/) installed).
-3. Run Main classes for each pattern you want to
+2. Import as composed Maven project into your favorite IDE
+3. **Install [Lombok](https://projectlombok.org/)**
+4. Run Main classes for each pattern you want to
 
 Each design pattern code is stored within it's own Maven module.
 
