@@ -9,6 +9,8 @@ To run this code simply:
 3. **Install [Lombok](https://projectlombok.org/)**
 4. Run Main classes for each pattern you want to
 
+## Patterns
+
 Each design pattern code is stored within it's own Maven module.
 
 In this exercise I implemented the following patterns with simple scenarios.
