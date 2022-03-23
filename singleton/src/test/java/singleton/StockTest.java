@@ -1,7 +1,8 @@
 package singleton;
 
-import org.junit.Assert;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
 
 public class StockTest {
 
@@ -9,14 +10,14 @@ public class StockTest {
 	public void test() {
 
 		Float dollar = 2.3F;
-		
+
 		Stock stock = Stock.getInstance();
 		stock.setDollar(dollar);
-		
+
 		Stock stock2 = Stock.getInstance();
-		
-		Assert.assertEquals(dollar, stock2.getDollar());
-		
+
+		assertEquals(dollar, stock2.getDollar());
+
 	}
 
 }

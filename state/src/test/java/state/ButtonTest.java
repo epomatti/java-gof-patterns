@@ -1,7 +1,8 @@
 package state;
 
-import org.junit.Assert;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
 
 public class ButtonTest {
 
@@ -10,11 +11,11 @@ public class ButtonTest {
 
 		String on = "On";
 		String off = "Off";
-		
+
 		Button button = new Button();
-		Assert.assertEquals(on, button.push());
-		Assert.assertEquals(off, button.push());
-		
+		assertEquals(on, button.push());
+		assertEquals(off, button.push());
+
 	}
 
 }

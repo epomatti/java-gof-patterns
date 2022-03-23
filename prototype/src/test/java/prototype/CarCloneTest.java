@@ -1,8 +1,8 @@
 package prototype;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class CarCloneTest {
 
@@ -14,8 +14,8 @@ public class CarCloneTest {
 		car.setColor("Red");
 		
 		Car carClone = (Car) car.clone();
-		Assert.assertEquals(car.getName(), carClone.getName());
-		Assert.assertEquals(car.getColor(), carClone.getColor());
+		assertEquals(car.getName(), carClone.getName());
+		assertEquals(car.getColor(), carClone.getColor());
 	}
 
 }

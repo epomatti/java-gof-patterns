@@ -1,8 +1,8 @@
 package strategy;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class StrategyTest {
 
@@ -18,18 +18,18 @@ public class StrategyTest {
 		int subResult = 90;
 		int multResult = 1000;
 		int divResult = 10;
-		
+
 		StrategyContext context = new StrategyContext(new Add());
-		Assert.assertEquals(addResult, context.executeStrategy(a, b));
-		
+		assertEquals(addResult, context.executeStrategy(a, b));
+
 		context = new StrategyContext(new Subtract());
-		Assert.assertEquals(subResult, context.executeStrategy(a, b));
-		
+		assertEquals(subResult, context.executeStrategy(a, b));
+
 		context = new StrategyContext(new Multiply());
-		Assert.assertEquals(multResult, context.executeStrategy(a, b));
-		
+		assertEquals(multResult, context.executeStrategy(a, b));
+
 		context = new StrategyContext(new Divide());
-		Assert.assertEquals(divResult, context.executeStrategy(a, b));
+		assertEquals(divResult, context.executeStrategy(a, b));
 	}
 
 }

@@ -1,8 +1,7 @@
 package org.bonanzaone.product.concrete;
 
-import org.junit.Assert;
-import org.junit.Test;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 import product.concrete.Brazillian;
 
 public class BrazillianTest {
@@ -11,7 +10,7 @@ public class BrazillianTest {
 	public void testSayHello() {
 		String hello = "Olá";
 		Brazillian brazillian = new Brazillian();
-		Assert.assertEquals(hello, brazillian.sayHello());
+		assertEquals(hello, brazillian.sayHello());
 	}
 
 }

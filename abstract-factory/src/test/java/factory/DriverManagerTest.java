@@ -1,41 +1,33 @@
 package factory;
 
-import java.util.Arrays;
-import java.util.Collection;
+import java.util.stream.Stream;
 
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import drivers.interfaces.Driver;
 import factory.interfaces.DriverFactory;
 
-@RunWith(Parameterized.class)
 public class DriverManagerTest {
 
-	private String factory;
-	private String driver;
-
-	public DriverManagerTest(String factory, String driver) {
-		super();
-		this.factory = factory;
-		this.driver = driver;
+	public static Stream<String> factories() {
+		return Stream.of("SqlServer", "OracleServer");
 	}
 
-	@SuppressWarnings("rawtypes")
-	@Parameters
-	public static Collection primeNumbers() {
-		return Arrays.asList(new Object[][] { { "SqlServer", "SqlServer" }, { "OracleServer", "Oracle" } });
+	public static Stream<String> drivers() {
+		return Stream.of("SqlServer", "Oracle");
 	}
 
-	@Test
-	public void testGetFactory() {
+	@ParameterizedTest
+	@MethodSource({ "factories", "drivers" })
+	public void testGetFactory(String factory, String driver) {
 
 		DriverFactory df = DriverManager.getFactory(factory);
 
-		Assert.assertNotNull(df);
+		assertNotNull(df);
 
 		Driver d = df.getDriver();
 
@@ -44,15 +36,15 @@ public class DriverManagerTest {
 		d.execute("");
 		d.rollback();
 
-		Assert.assertNotNull(d);
-		Assert.assertEquals(driver, d.getDriverName());
+		assertNotNull(d);
+		assertEquals(driver, d.getDriverName());
 	}
 
-	@Test
-	public void testInvalidGetFactory() {
-		new DriverManager();
-		DriverFactory df = DriverManager.getFactory("");
-		Assert.assertNull(df);
+	// @Test
+	// public void testInvalidGetFactory() {
+	// 	new DriverManager();
+	// 	DriverFactory df = DriverManager.getFactory("");
+	// 	assertNull(df);
 
-	}
+	// }
 }

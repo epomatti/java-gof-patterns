@@ -1,7 +1,9 @@
 package facade;
 
-import org.junit.Assert;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import org.junit.jupiter.api.Test;
 
 public class CustomerFacadeTest {
 
@@ -10,19 +12,19 @@ public class CustomerFacadeTest {
 
 		String customerName = "Evandro";
 		String addressName = "My address";
-		
+
 		CustomerFacade facade = new CustomerFacade();
 		Customer customer = facade.newCustomer(customerName, addressName);
-		
-		Assert.assertNotNull(customer);
-		
-		Assert.assertEquals(customerName, customer.getName());
-		
+
+		assertNotNull(customer);
+
+		assertEquals(customerName, customer.getName());
+
 		Address address = customer.getAddress();
-		Assert.assertNotNull(address);
-		
-		Assert.assertEquals(addressName, address.getAddress());
-		
+		assertNotNull(address);
+
+		assertEquals(addressName, address.getAddress());
+
 	}
 
 }

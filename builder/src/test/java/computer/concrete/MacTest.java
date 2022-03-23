@@ -1,25 +1,29 @@
 package computer.concrete;
 
-import org.junit.Assert;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import org.junit.jupiter.api.Test;
 
 import util.IncompatibleProgram;
 import util.Program;
 
 public class MacTest {
 
-	@Test(expected=IncompatibleProgram.class)
-	public void testInstallProgramException() throws IncompatibleProgram{		
-		Mac mac = new Mac();
-		mac.installProgram(Program.Office);
+	@Test
+	public void testInstallProgramException() throws IncompatibleProgram{
+		assertThrows(IncompatibleProgram.class, () -> {
+			Mac mac = new Mac();
+			mac.installProgram(Program.Office);
+		});		
 	}
 	
 	@Test
 	public void testInstallProgramSucess() throws IncompatibleProgram{		
 		Mac mac = new Mac();
-		Assert.assertEquals(0, mac.getPrograms().size());
+		assertEquals(0, mac.getPrograms().size());
 		mac.installProgram(Program.iTunes);
-		Assert.assertEquals(1, mac.getPrograms().size());
+		assertEquals(1, mac.getPrograms().size());
 	}
 
 }
