@@ -1,5 +1,7 @@
 # Java Design Patterns (GOF)
 
+![maven](https://github.com/epomatti/java-gof-patterns/actions/workflows/maven.yml/badge.svg)
+
 Classic GoF design patterns implemented in Java that I used to prepare for my OCMJEA6 certification.
 
 ## Setup
