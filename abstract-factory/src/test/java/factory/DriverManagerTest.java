@@ -3,10 +3,10 @@ package factory;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.junit.jupiter.params.provider.ValueSource;
 
 import drivers.interfaces.Driver;
 import factory.interfaces.DriverFactory;
@@ -40,11 +40,11 @@ public class DriverManagerTest {
 		assertEquals(driver, d.getDriverName());
 	}
 
-	// @Test
-	// public void testInvalidGetFactory() {
-	// 	new DriverManager();
-	// 	DriverFactory df = DriverManager.getFactory("");
-	// 	assertNull(df);
+	@Test
+	public void testInvalidGetFactory() {
+		new DriverManager();
+		DriverFactory df = DriverManager.getFactory("");
+		assertNull(df);
 
-	// }
+	}
 }
