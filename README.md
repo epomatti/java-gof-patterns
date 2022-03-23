@@ -12,7 +12,7 @@ Install Maven and dependencies dependencies (you can use an IDE plugin as well):
 sudo apt install maven
 
 mvn install
-mvn clean compile
+mvn compile
 ```
 
 Install [Lombok](https://projectlombok.org/setup/overview) plugin in your favorite IDE.
