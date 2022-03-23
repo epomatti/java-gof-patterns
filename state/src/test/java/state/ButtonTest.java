@@ -3,8 +3,6 @@ package state;
 import org.junit.Assert;
 import org.junit.Test;
 
-import state.Button;
-
 public class ButtonTest {
 
 	@Test

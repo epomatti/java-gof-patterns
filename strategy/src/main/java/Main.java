@@ -1,6 +1,7 @@
-package strategy;
+import strategy.Add;
+import strategy.StrategyContext;
 
-public class ClientStrategy {
+public class Main {
 
 	public static void main(String[] args) {
 

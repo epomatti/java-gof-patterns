@@ -1,4 +1,6 @@
-package decorator;
+import decorator.IceCream;
+import decorator.SimpleIceCream;
+import decorator.ToppingDecorator;
 
 public class Main {
 

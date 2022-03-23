@@ -1,6 +1,8 @@
-package memento;
+import memento.Caretaker;
+import memento.Memento;
+import memento.Originator;
 
-public class MementoClient {
+public class Main {
 
 	public static void main(String[] args) {
 		Originator originator = new Originator();

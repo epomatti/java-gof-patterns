@@ -1,4 +1,5 @@
-package adapter;
+import adapter.PS2Adapter;
+import adapter.USBMouse;
 
 public class Main {
 	

@@ -1,10 +1,11 @@
-package observer;
-
 import java.util.Observer;
+
+import observer.SystemObserver;
+import observer.VersionObservable;
 
 //Deprecated since Java 9
 @SuppressWarnings("deprecation")
-public class ClientObserver {
+public class Main {
 	
 	public static void main(String[] args) {
 		

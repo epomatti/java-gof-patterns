@@ -4,8 +4,6 @@ package prototype;
 import org.junit.Assert;
 import org.junit.Test;
 
-import prototype.Car;
-
 public class CarCloneTest {
 
 	@Test

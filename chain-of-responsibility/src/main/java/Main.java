@@ -1,4 +1,7 @@
-package chain.of.responsibility;
+import chain.of.responsibility.NumberHandler;
+import chain.of.responsibility.Request;
+import chain.of.responsibility.RequestChain;
+import chain.of.responsibility.TextHandler;
 
 public class Main {
 

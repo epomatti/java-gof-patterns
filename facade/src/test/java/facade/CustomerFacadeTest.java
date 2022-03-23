@@ -3,10 +3,6 @@ package facade;
 import org.junit.Assert;
 import org.junit.Test;
 
-import facade.Address;
-import facade.Customer;
-import facade.CustomerFacade;
-
 public class CustomerFacadeTest {
 
 	@Test

@@ -1,6 +1,7 @@
-package template.method;
+import template.method.ConcreteClass;
+import template.method.Template;
 
-public class TemplateMain {
+public class Main {
 	
 	public static void main(String[] args) {
 		

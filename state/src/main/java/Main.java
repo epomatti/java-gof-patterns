@@ -1,6 +1,6 @@
-package state;
+import state.Button;
 
-public class StateClient {
+public class Main {
 
 	public static void main(String[] args) {
 		

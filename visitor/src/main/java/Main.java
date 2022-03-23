@@ -1,9 +1,12 @@
-package visitor;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClientVisitor {
+import visitor.HealthVisitor;
+import visitor.Student;
+import visitor.Teatcher;
+import visitor.Visitor;
+
+public class Main {
 
 	public static void main(String[] args) {
 		

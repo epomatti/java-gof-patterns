@@ -1,6 +1,6 @@
-package prototype;
+import prototype.Car;
 
-public class CarClone {
+public class Main {
 	
 	public static void main(String[] args) throws CloneNotSupportedException {
 		

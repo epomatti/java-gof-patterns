@@ -1,35 +1,49 @@
 # Java Design Patterns (GOF)
 
-Classic design patterns implemented in Java that I used to prepare for my OCMJEA6 certification.
+Classic GoF design patterns implemented in Java that I used to prepare for my OCMJEA6 certification.
 
-To run this code simply:
+## Setup
 
-1. Clone the repo
-2. Import as composed Maven project into your favorite IDE
-3. **Install [Lombok](https://projectlombok.org/)**
-4. Run Main classes for each pattern you want to
+Install Maven and dependencies dependencies (you can use an IDE plugin as well):
 
-## Patterns
+```sh
+sudo apt install maven
 
-Each design pattern code is stored within it's own Maven module.
+mvn install
+mvn clean compile
+```
 
-In this exercise I implemented the following patterns with simple scenarios.
+Install [Lombok](https://projectlombok.org/setup/overview) plugin in your favorite IDE.
 
-- Abstract Factory
-- Adapter
-- Builder
-- Chain-of-responsibility
-- Composite
-- Decorator
-- Facade
-- Factory Method
-- Mediator
-- Memento
-- Observer
-- Prototype
-- Proxy
-- Singleton
-- State
-- Strategy
-- Template Method
-- Visitor
+Compiled with JDK 11.
+
+## Running it
+
+```sh
+mvn exec:java -pl '<module-name>'
+```
+
+Example: `mvn exec:java -pl composite`
+
+Available pattern modules:
+
+```
+abstract-factory
+adapter
+builder
+chain-of-responsibility
+composite
+decorator
+facade
+factory-method
+mediator
+memento
+observer
+prototype
+proxy
+singleton
+state
+strategy
+template-method
+visitor
+```

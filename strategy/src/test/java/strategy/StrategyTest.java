@@ -4,12 +4,6 @@ package strategy;
 import org.junit.Assert;
 import org.junit.Test;
 
-import strategy.StrategyContext;
-import strategy.Divide;
-import strategy.Multiply;
-import strategy.Add;
-import strategy.Subtract;
-
 public class StrategyTest {
 
 	@Test
